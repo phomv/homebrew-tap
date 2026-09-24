@@ -5,21 +5,21 @@
 class Phomv < Formula
   desc "High-performance CLI that organizes photos into a YYYY/YYYY_MM/YYYY_MM_DD hierarchy from EXIF metadata"
   homepage "https://github.com/phomv/phomv"
-  version "0.1.1"
+  version "0.1.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/phomv/phomv/releases/download/v0.1.1/phomv-0.1.1-darwin-amd64.tar.gz"
-      sha256 "5e1d14be99807831e612ca8f914a87ec981cab78fb83e98029a52239b4f86590"
+      url "https://github.com/phomv/phomv/releases/download/v0.1.2/phomv-0.1.2-darwin-amd64.tar.gz"
+      sha256 "eac119583d87663c101097b25fc7297430b85c432e6e6d772b860d24ab7489c9"
 
       define_method(:install) do
         bin.install "phomv"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/phomv/phomv/releases/download/v0.1.1/phomv-0.1.1-darwin-arm64.tar.gz"
-      sha256 "c84a0b4eb81da625121f366f2ae33dc5f9567f489b22489202665fe79d97feae"
+      url "https://github.com/phomv/phomv/releases/download/v0.1.2/phomv-0.1.2-darwin-arm64.tar.gz"
+      sha256 "1b85d3fbe7e5cf605c49573bf27243925ab7135ee49eec47239a7c01ea54022f"
 
       define_method(:install) do
         bin.install "phomv"
@@ -29,15 +29,15 @@ class Phomv < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/phomv/phomv/releases/download/v0.1.1/phomv-0.1.1-linux-amd64.tar.gz"
-      sha256 "30b1ff06e57d5419430febcf59901c9166dd2f8b29a2528c853036d1fc5a792c"
+      url "https://github.com/phomv/phomv/releases/download/v0.1.2/phomv-0.1.2-linux-amd64.tar.gz"
+      sha256 "bdaf1ed0a79a69fdb6d7f5f58a90ad422f7d4edb95628437ff3a1dcdf35ca8b7"
       define_method(:install) do
         bin.install "phomv"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/phomv/phomv/releases/download/v0.1.1/phomv-0.1.1-linux-arm64.tar.gz"
-      sha256 "acbb70cb563056bd6ca311e97f733c0f6a35f712fdd23e131db427be2ad7bff9"
+      url "https://github.com/phomv/phomv/releases/download/v0.1.2/phomv-0.1.2-linux-arm64.tar.gz"
+      sha256 "d4bd3ce8083ebae4ea845f7ac889bde297fbf31780f25214c2cc23891b784e31"
       define_method(:install) do
         bin.install "phomv"
       end
